@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Animax Asia</title>
+    <script type="text/javascript" src="public/js/jquery-1.9.1.min.js"></script>
+    <style>
+        .bgg {
+            height: 705px;
+            background-attachment: fixed;
+            background-size: 1100px;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index:-2;
+            -webkit-animation-name: bg;
+            -webkit-animation-duration: 30s;
+            -webkit-animation-iteration-count: infinite;
+            transition: ease-in-out;
+        }
+
+        @-webkit-keyframes bg {
+            0%{background-size: 1400px;}
+            50%{background-size: 1500px;}
+            100%{background-size: 1400px;}
+        }
+
+        #d1 {
+            background-image: url("public/img/animax-logo-wallpaper.jpg");
+            -webkit-animation-name: bg1;
+            -webkit-animation-duration: 30s;
+            -webkit-animation-iteration-count: infinite;
+            transition: ease-in-out;
+        }
+
+        @-webkit-keyframes bg1 {
+            0%{background-size: 1100px;}
+            50%{background-size: 1200px;}
+            100%{background-size: 1100px;}
+        }
+
+        #d3 {
+            background-image: url("public/img/OH-MY-GOD-animax-the-complete-anime-32535813-1200-820.jpg");
+            background-size: cover;
+            height: 1100px;
+        }
+        #d5{
+            background-image: url("public/img/animax-one-punch-man-1-.jpg");
+            background-size: cover;
+            height: 1100px;
+        }
+        ul {
+            list-style-type: none;
+            margin-top: 80;
+            margin-left: 100px;
+            padding: 0;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            font: 20px EuropaRegular,sans-serif;
+            letter-spacing: .15em;
+            z-index: 20;
+        }
+
+        li {
+            float: left;
+            margin-left: 110px;
+            width:120px;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            /*background-color: darkblue;*/
+            color: royalblue;
+        }
+
+        .active {
+            color:royalblue;
+        }
+        #d2{
+            color: snow;
+            background-image: url("public/img/nisekoi_show_page_background.jpg");
+            background-size: cover;
+            height: 0.5px;
+        }
+        #d21{
+            background-color: black;
+            opacity: 0.625;
+            height: 500px;
+        }
+        #d41{
+            background-color: #35017F;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#d41">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="contents.html"><img src="public/img/align-justify.svg" style="width: 40px; height: 65px; margin-top: -20px" ></a>
+    </li>
+</ul>
+<div id="d1" class="bgg"></div>
+<div id="d2">
+<div id="d21"></div>
+</div>
+<div id="d3" class="bgg"></div>
+
+    <div id="d41"></div>
+
+<div id="d5" class="bgg"></div>
+
+</body>
+</html>

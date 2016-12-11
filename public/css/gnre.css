@@ -1,0 +1,219 @@
+.autocomplete-suggestions { border: 1px solid #999; background: #fff; cursor: default; overflow: auto; }
+.autocomplete-suggestion { padding: 10px 5px; font-size: 1.2em; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #f0f0f0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399ff; }
+
+#searchfield { display: block; width: 100%; text-align: center; margin-bottom: 35px; }
+
+#searchfield form {
+    display: inline-block;
+    background: #eeefed;
+    padding: 0;
+    margin: 0;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 5px 0 0 0;
+}
+
+#searchfield form .biginput {
+    width: 600px;
+    height: 40px;
+    padding: 0 10px 0 10px;
+    background-color: #fff;
+    border: 1px solid #c8c8c8;
+    border-radius: 3px;
+    color: #aeaeae;
+    font-weight:normal;
+    font-size: 1.5em;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+#searchfield form .biginput:focus {
+    color: #858585;
+}
+
+#g1 {
+    font: 90px EuropaRegular,sans-serif;
+    letter-spacing: .65em;
+    font-weight: lighter;
+    margin-top: 24.78px;
+    height: 154px;
+}
+
+#g2 {
+    margin-left: 80px;
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*flex-flow: row;*/
+}
+
+.inside {
+    width: 500px;
+    height: 250px;
+    margin: 20px;
+    border-style: double;
+    border-width: 0.5px;
+    border-color: black;
+    font: 50px EuropaRegular,sans-serif;
+    letter-spacing: .35em;
+    font-weight: lighter;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    position: relative;
+}
+
+.titl, .matter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.titl {
+    padding-top: 90px;
+}
+
+.matter{
+    font: 19.4px EuropaRegular,sans-serif;
+    letter-spacing: .25em;
+    font-weight: lighter;
+    background-color: black;
+    opacity:0;
+    color: white;
+    z-index: 10;
+    text-align: center;
+    /*display: none;*/
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.inside:hover div{
+    /*display: block;*/
+    visibility: visible;
+    opacity:0.656;
+}
+
+a{
+    text-decoration: none;
+    color: lightsalmon;
+}
+
+#g21 {
+    background-image: url("public/img/action-anime.jpg");
+    background-size: cover;
+}
+
+#g22 {
+    background-image: url("public/img/adventure.jpg");
+    background-size: cover;
+}
+
+#g23 {
+    background-image: url("public/img/comedy.jpg");
+    background-size: cover;
+}
+
+#g24 {
+    background-image: url("public/img/demon.png");
+    background-size: cover;
+}
+
+#g25 {
+    background-image: url("public/img/drama.jpg");
+    background-size: cover;
+}
+
+#g26 {
+    background-image: url("public/img/fantasy.jpg");
+    background-size: cover;
+}
+
+#g27 {
+    background-image: url("public/img/game.jpg");
+    background-size: cover;
+}
+
+#g28 {
+    background-image: url("public/img/historical.jpg");
+    background-size: cover;
+}
+
+#g29 {
+    background-image: url("public/img/horror.jpg");
+    background-size: cover;
+}
+
+#g210 {
+    background-image: url("public/img/josei.jpg");
+    background-size: cover;
+}
+
+#g211 {
+    background-image: url("public/img/magic.jpg");
+    background-size: cover;
+}
+
+#g212 {
+    background-image: url("public/img/martial.jpg");
+    background-size: cover;
+}
+
+#g213 {
+    background-image: url("public/img/kids.jpg-large");
+    background-size: cover;
+}
+
+#g214 {
+    background-image: url("public/img/music.jpg");
+    background-size: cover;
+}
+
+#g215 {
+    background-image: url("public/img/mystery.jpg");
+    background-size: cover;
+}
+
+#g217 {
+    background-image: url("public/img/romance.jpg");
+    background-size: cover;
+}
+
+#g218 {
+    background-image: url("public/img/scifi.jpg");
+    background-size: cover;
+}
+
+#g219 {
+    background-image: url("public/img/shounen.jpg");
+    background-size: cover;
+}
+
+#g220 {
+    background-image: url("public/img/sports.jpg");
+    background-size: cover;
+}
+
+#g221 {
+    background-image: url("public/img/superpower.jpg");
+    background-size: cover;
+}
+
+center {
+    z-index: -30;
+}
+.matter:hover {
+    display: inline-block;
+}
+#autocomplete{
+    background-image: url("public/img/pict--search-icon-glyph-icons-vector-stencils-library.png");
+    background-size: 34px;
+    background-repeat: no-repeat;
+}
+#autocomplete:focus {
+    background-image: url("public/img/index.png");
+}

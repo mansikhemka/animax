@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Artists</title>
+</head>
+<style>
+
+    .crt-parallaxvideo {
+        height: 10px;
+        /*padding-bottom: 20px;*/
+        /*padding-top: 30px;*/
+    }
+
+    .crt-parallaxvideo video {
+        min-width: 100%;
+        position: fixed;
+        top:0px ;
+        z-index: -100;
+    }
+
+    body {
+        height: 200px;
+        /*background: linear-gradient(to bottom, white, lightblue);*/
+        /*background-repeat: no-repeat;*/
+        background-color: transparent;
+        overflow-x: hidden;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 1270px;
+        height: 400px;
+        background-color: transparent;
+        margin-left: 28px;
+        /*overflow-y: scroll;*/
+   }
+
+    .artists {
+        width: 300px;
+        height: 300px;
+        border-style: groove;
+        border-color: #858585;
+        border-radius: 100%;
+    }
+
+    #a2 {
+        -webkit-animation-name: a2a;
+        -webkit-animation-duration: 8s;
+        -webkit-animation-fill-mode: forwards;
+        position: relative;
+        transition: ease-in;
+        background-image: url("public/img/Hiro_Mashima.png");
+        transition:ease-in-out;
+    }
+
+    @-webkit-keyframes a2a {
+        0%{left:5%; top:100%; transition:ease-in-out;}
+        100%{left:15%; top:5%;}
+    }
+
+    .artists:hover{
+        box-shadow: 2px 2px 2px 5px cadetblue;
+    }
+
+    #a4 {
+        -webkit-animation-name: a4a;
+        -webkit-animation-duration: 8s;
+        -webkit-animation-fill-mode: forwards;
+        position: relative;
+        transition: ease-in;
+        background-image: url("public/img/Gosho_Aoyama.jpg");
+        background-size: cover;
+    }
+
+    @-webkit-keyframes a4a {
+        0%{left:50%; top:100%; transition:ease-in-out;}
+        100%{left: 40%; top:5%;}
+    }
+
+    #a5{
+        -webkit-animation-name: a4a;
+        -webkit-animation-duration: 8s;
+        -webkit-animation-fill-mode: forwards;
+        position: relative;
+        transition: ease-in;
+        background-image: url("public/img/kenjirohata.jpeg");
+        background-size: cover;
+    }
+
+    @-webkit-keyframes a4a {
+        0%{left:50%; top:100%; transition:ease-in-out;}
+        100%{left: 25%; top:10%;}
+    }
+
+    #a7 {
+        background-color: white;
+        -webkit-animation-name: a7a;
+        -webkit-animation-duration: 8s;
+        -webkit-animation-fill-mode: forwards;
+        position: relative;
+        transition: ease-in;
+        background-image: url("public/img/mitsoru.jpg");
+        background-size: cover;
+    }
+
+    @-webkit-keyframes a7a {
+        0%{left:10%; top:100%; transition:ease-in-out;}
+        100%{left: -15%; top:95%;}
+    }
+
+    #a8 {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        -webkit-animation-name: a8a;
+        -webkit-animation-duration: 8s;
+        -webkit-animation-fill-mode: forwards;
+        position: relative;
+        transition: ease-in;
+    }
+
+    @-webkit-keyframes a8a {
+        0%{left:10%; top:100%; transition:ease-in-out;}
+        100%{left: -45%; top:35%;}
+    }
+
+    #a9 {
+        background-color: white;
+        -webkit-animation-name: a9a;
+        -webkit-animation-duration: 8s;
+        -webkit-animation-fill-mode: forwards;
+        position: relative;
+        transition: ease-in;
+    }
+
+    @-webkit-keyframes a9a {
+        0%{left:10%; top:100%; transition:ease-in-out;}
+        100%{left: -45%; top:35%;}
+    }
+
+    #a10 {
+        background-color: white;
+        z-index: 10;
+        width: 410px;
+        height: 410px;
+        -webkit-animation-name: a10a;
+        -webkit-animation-duration: 8s;
+        -webkit-animation-fill-mode: forwards;
+        position: relative;
+        transition: ease-in;
+        background-image: url("public/img/506709-oda1_1.gif");
+        background-size: cover;
+    }
+
+    @-webkit-keyframes a10a {
+        0%{left:10%; top:100%; transition:ease-in-out;}
+        100%{left: -40%; top:5%;}
+    }
+
+    #a11 {
+        background-image: url("public/img/Atsushi_Ōkubo_-_(4).png");
+        background-size: cover;
+        -webkit-animation-name: a11a;
+        -webkit-animation-duration: 8s;
+        -webkit-animation-fill-mode: forwards;
+        position: relative;
+        transition: ease-in;
+    }
+
+    @-webkit-keyframes a11a {
+        0%{left:10%; top:100%; transition:ease-in-out;}
+        100%{left: -41%; top:49%;}
+    }
+
+    #a12 {
+        background-image: url("public/img/Shouji_Sato_signing.jpg");
+        background-size: cover;
+        width: 500px;
+        height: 500px;
+        -webkit-animation-name: a12a;
+        -webkit-animation-duration: 8s;
+        -webkit-animation-fill-mode: forwards;
+        position: relative;
+        transition: ease-in;
+    }
+
+    @-webkit-keyframes a12a {
+        0%{left:10%; top:100%; transition:ease-in-out;}
+        100%{left: 57%; top:3%;}
+    }
+
+    #a13 {
+        width: 510px;
+        height: 510px;
+        background-image: url("public/img/Kazuki_takahashi.jpg");
+        background-size: cover;
+        -webkit-animation-name: a13a;
+        -webkit-animation-duration: 8s;
+        -webkit-animation-fill-mode: forwards;
+        position: relative;
+        transition: ease-in;
+    }
+
+    @-webkit-keyframes a13a {
+        0%{left:10%; top:100%; transition:ease-in-out;}
+        100%{left: -25%; top:15%;}
+    }
+
+    #a14 {
+        width: 480px;
+        height: 480px;
+        background-image: url("public/img/796463.jpg");
+        background-size: cover;
+        -webkit-animation-name: a14a;
+        -webkit-animation-duration: 8s;
+        -webkit-animation-fill-mode: forwards;
+        position: relative;
+        transition: ease-in;
+    }
+
+    @-webkit-keyframes a14a {
+        0%{left:10%; top:100%; transition:ease-in-out;}
+        100%{left: 10%; top:25%;}
+    }
+
+    #a15 {
+        background-image: url("public/img/hqdefault.jpg");
+        background-size: cover;
+        -webkit-animation-name: a15a;
+        -webkit-animation-duration: 8s;
+        -webkit-animation-fill-mode: forwards;
+        position: relative;
+        transition: ease-in;
+    }
+
+    @-webkit-keyframes a15a {
+        0%{left:10%; top:100%; transition:ease-in-out;}
+        100%{left: -40%; top:5%;}
+    }
+
+    #a16 {
+        width: 450px;
+        height: 450px;
+        background-image: url("public/img/9231.jpg");
+        background-size: cover;
+        -webkit-animation-name: a16a;
+        -webkit-animation-duration: 8s;
+        -webkit-animation-fill-mode: forwards;
+        position: relative;
+        transition: ease-in;
+    }
+
+    @-webkit-keyframes a16a {
+        0%{left:10%; top:100%; transition:ease-in-out;}
+        100%{left: -9%; top:10%;}
+    }
+
+    #a17 {
+        width: 350px;
+        height: 350px;
+        background-image: url("public/img/Akira-Toriyama-DB-mangaka.jpg");
+        background-size: cover;
+        -webkit-animation-name: a17a;
+        -webkit-animation-duration: 8s;
+        -webkit-animation-fill-mode: forwards;
+        position: relative;
+    }
+
+    @-webkit-keyframes a17a {
+        0%{left:10%; top:100%; transition:ease-in-out;}
+        100%{left: 50%; top:-17%;}
+    }
+
+    .a81 {
+          width: 60px;
+          height: 60px;
+        border-style: groove;
+        border-color: #3399ff;
+        border-radius: 100%;
+        background-color: transparent;
+    }
+
+    #headi{
+        font: 90px EuropaRegular,sans-serif;
+        letter-spacing: .65em;
+        font-weight: lighter;
+        margin-top: 24.78px;
+        padding-bottom: 50px;
+        height: 20px;
+        color: lightblue;
+        text-shadow: 1px 1px 1px blue;
+    }
+   #a8, #a15, #a9{
+        border-color: transparent;
+        background-color: transparent;
+    }
+
+
+
+</style>
+<body>
+
+<div class="crt-parallaxvideo">
+    <video autoplay muted loop>
+        <source src="public/img/vid1.mp4" type="video/mp4">
+    </video>
+</div>
+
+
+<div id="headi">
+    <div style="float: left; margin-left: 300px;"> ARTISTS</center>
+    <a href="contents.html"><img src="public/img/align-justify.svg" style="width: 40px; height: 65px; display: inline-block;margin-left: 90px; float: right;" ></a>
+
+</div>
+    </div>
+<div class="main">
+<div id="a2" class="artists"></div>
+<div id="a4" class="artists">
+    <div class="a81" style="margin-left: 230px; width: 100px; height: 100px; margin-top: 50px"></div>
+</div>
+<div id="a5" class="artists"></div>
+<div id="a7" class="artists">
+    <div class="a81"></div>
+</div>
+<div id="a8" class="artists"></div>
+<div id="a9" class="artists"></div>
+<div id="a10" class="artists"></div>
+<div id="a11" class="artists"></div>
+<div id="a12" class="artists"></div>
+<div id="a13" class="artists"></div>
+<div id="a14" class="artists"></div>
+<div id="a15" class="artists"></div>
+<div id="a16" class="artists"></div>
+<div id="a17" class="artists"></div>
+</div>
+</body>
+</html>
